@@ -27,3 +27,12 @@ Use: dotnet publish
 Note:
 You may modify RuntimeIdentifier to Win-x86 to build a 32 bit application.
 
+# Why do you have no builds
+It is bad practice.
+
+Download dotnet 8.0 sdk, then using a console, navigate to the directory the source code is in and run the dotnet publish command.
+
+Once that completes successfully, navigate to the publish folder (./bin/Release/win-x64/publish/), the exe can be copied from this folder and used.
+
+Make sure to include a config.json file in the same folder as the exe!
+
